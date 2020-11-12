@@ -1,0 +1,314 @@
+/* --------------------------
+:: Template Name: SYNDICATION
+:: Description: SYNDICATION is Radio services page 
+:: Created: 12/11/2020  MM/DD/YYYY
+-------------------------- */
+
+/* ----------------------
+
+[Table of contents]
+01.Base CSS
+02.Header CSS
+03.Asside CSS
+04.main content
+05.Footer
+
+
+ --------------------------*/
+
+/*  ----------- 01- Start Base CSS  ----------- */
+
+:root {
+  --main-black-color: #3a3a3a;
+  --main-greey-color: #afb6b3;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+li {
+  padding: 0;
+  margin: 0;
+}
+.btn {
+  border-radius: 0;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #898989;
+}
+main {
+  padding: 15px 0 0;
+  overflow: hidden;
+}
+@media (max-width: 992px) {
+  section {
+    padding: 40px 0;
+  }
+}
+
+p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+.arrondi-block {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  color: #cecece;
+}
+/*  ----------- 01 -End Base CSS   -----------*/
+
+/* ----------- 02 -Start Header CSS   -----------*/
+.Header {
+  background-color: var(--main-black-color);
+  color: #e7e7e7;
+  overflow: hidden;
+  padding: 10px 15px;
+}
+@media (max-width: 992px) {
+  .Header {
+    text-align: center;
+  }
+  .Header .h-logo img {
+    width: 120px;
+  }
+  .h-right {
+    text-align: center !important;
+    margin-top: 10px;
+  }
+  .h-right img {
+  }
+}
+
+.h-right {
+  padding: 5px 0 0;
+  text-align: right;
+}
+
+.h-right span {
+  margin-right: 15px;
+}
+/* ----------- 02 -End Header CSS   -----------*/
+
+/* ----------- 03  Start Asside CSS   -----------*/
+.asside {
+  color: #fff;
+  padding: 0 10px;
+}
+.mon-compte {
+  background-color: var(--main-black-color);
+  font-size: 20px;
+}
+.news_musics {
+  background-color: #051025;
+  font-size: 20px;
+}
+.news_musics,
+.mon-compte {
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  color: #fff;
+}
+
+.side-box {
+  background-color: var(--main-greey-color);
+  padding: 10px 15px;
+  margin: 15px 0;
+}
+.side-title {
+  color: var(--main-black-color);
+  margin: 10px 0 15px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.side-list {
+}
+.side-list li {
+  background-color: var(--main-black-color);
+  padding: 5px 22px;
+  box-shadow: -7px 0px 3px 1px #686868;
+  position: relative;
+  margin: 5px 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+.side-list li:hover {
+  box-shadow: -7px 0px 0px 0px #06b5eb !important;
+}
+.side-list .active {
+  box-shadow: -7px 0px 0px 0px #06b5eb !important;
+}
+.points {
+  position: absolute;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  right: 6px;
+  top: -6px;
+}
+
+/* ----------- 03  End Asside CSS   -----------*/
+
+/* ----------- 04  Start main content CSS   -----------*/
+
+.main-header {
+  background: url(../files/calque.png) no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 200px;
+}
+.content {
+  padding: 15px;
+}
+.content img {
+  max-width: 100%;
+  height: 166px;
+}
+@media (max-width: 992px) {
+  .main-header {
+    text-align: center;
+  }
+  .content img {
+    height: 70px;
+  }
+}
+.content h5 {
+  font-size: 18px;
+  margin: 15px 0 10px;
+}
+.content h3 {
+  font-size: 30px;
+}
+.content p {
+  margin: 50px 0 0;
+}
+.black-back {
+  background-color: var(--main-black-color);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.grey-back {
+  background-color: var(--main-greey-color);
+  border-radius: 10px;
+}
+.main-content {
+  margin: 15px 0;
+}
+.my_collapse {
+  margin: 15px 0;
+}
+.my_collapse > div:not(.ftp) {
+  display: none;
+  color: #fff;
+  height: 300px;
+}
+.main-control {
+  padding: 8px 10px;
+  text-align: center;
+  border-radius: 12px;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .main-control {
+    margin: 5px 0;
+  }
+}
+.main-control:hover {
+  border-bottom: 5px solid #ed0084;
+}
+
+.main-control.active {
+  border-bottom: 5px solid #ed0084;
+}
+.main-control h5 {
+  font-size: 13px !important;
+  font-weight: 600;
+}
+.table .grey-back {
+  border-radius: 0;
+}
+thead th:first-child,
+tbody td:first-child {
+  border-radius: 10px 0 0 10px !important;
+}
+thead th:last-child,
+tbody td:last-child {
+  border-radius: 0 10px 10px 0 !important;
+}
+.table {
+  border-collapse: separate;
+}
+.table tbody tr {
+  height: 50px;
+}
+
+.table thead th {
+  border-bottom: 2px solid #3a3a3a;
+}
+.table th,
+.table td {
+  border-bottom: 2px solid #3a3a3a;
+  border-right: 2px solid #3a3a3a;
+  border-top: none !important;
+}
+.main-support {
+  padding-left: 0 !important;
+  padding-right: 20px !important;
+}
+@media (max-width: 992px) {
+  .main-support {
+    margin: 10px 0;
+    padding-right: 0 !important;
+  }
+}
+.main-support .black-back {
+  padding: 10px 15px 25px;
+}
+.main-support h5 {
+  color: #e7e7e7;
+  margin: 10px 0 20px;
+}
+.main-support .grey-back {
+  padding: 25px 5px;
+  height: 228px;
+  font-size: 18px;
+}
+@media (max-width: 992px) {
+  .main-support .grey-back {
+    height: 100px;
+    width: 98%;
+    margin: auto;
+  }
+}
+/* ----------- 04  End main content CSS   -----------*/
+
+/* ----------- 05  Start Footer CSS   -----------*/
+footer {
+  margin: 20px 0 0;
+  padding: 10px 0 0;
+}
+footer .deco {
+  width: 90% !important;
+  margin: auto;
+}
+footer p {
+  font-size: 20px;
+  font-weight: 600;
+}
+footer .f-p-div {
+  padding: 10px 0 0;
+}
+@media (max-width: 992px) {
+  footer p {
+    margin: 10px 0;
+  }
+}
+/* ----------- 05  End Footer CSS   -----------*/
