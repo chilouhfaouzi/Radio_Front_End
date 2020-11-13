@@ -214,7 +214,6 @@ p {
 .my_collapse > div:not(.show) {
   display: none;
   color: #fff;
-  height: 300px;
 }
 .main-content .black-back .row > div {
   padding-left: 8px !important;
