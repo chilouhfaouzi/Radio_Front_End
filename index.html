@@ -43,20 +43,24 @@
           <!-- -----------  Start Asside ----------- -->
           <aside class="asside">
             <button class="mon-compte arrondi-block btn">Mon Compte</button>
-            <button class="news_musics arrondi-block btn">
+            <a class="news_musics arrondi-block btn">
               <img src="files/sm.png" />
               NOUVEAUTES MUSICALES
-            </button>
+            </a>
             <div class="side-box arrondi-block">
               <h5 class="side-title">
                 <img src="files/sond.png" /> Contenu Audio
               </h5>
               <ul class="side-list">
                 <li class="arrondi-block active">
-                  Chroniques Radios <span class="points">...</span>
+                  <a href="cronique.html">
+                    Chroniques Radios <span class="points">...</span>
+                  </a>
                 </li>
                 <li class="arrondi-block">
-                  Emissions<span class="points">...</span>
+                  <a href="cinema.html">
+                    Emissions (Cineme Now)<span class="points">...</span>
+                  </a>
                 </li>
                 <li class="arrondi-block">
                   Flashs Informations <span class="points">...</span>
@@ -165,7 +169,7 @@
                       </div>
                     </div>
                     <div class="my_collapse">
-                      <div class="ftp show">
+                      <div class="ftp">
                         <table class="table">
                           <thead>
                             <tr class="text-center">
@@ -268,7 +272,286 @@
                       </div>
                       <div class="commandes text-center">Commandes</div>
                       <div class="factures text-center">Factures</div>
-                      <div class="info text-center">Mes INFOS</div>
+                      <!----- Start MES INFOS  ------->
+                      <div class="info text-center show">
+                        <div class="grey-back">
+                          <form action="">
+                            <div class="row">
+                              <div class="col-lg-6">
+                                <div class="form-group">
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <label for="email">Nom</label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                      <input
+                                        type="email"
+                                        class="form-control"
+                                        id="email"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <label for="email">Email</label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                      <input
+                                        type="email"
+                                        class="form-control"
+                                        id="email"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <label for="addresse">Adresse</label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                      <textarea
+                                        class="form-control"
+                                        id="adresse"
+                                        rows="2"
+                                      ></textarea>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <label for="tel">Téléphone</label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                      <input
+                                        type="email"
+                                        class="form-control"
+                                        id="tel"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-6">
+                                <div class="form-group type">
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <label for="Type">Type</label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                      <select class="form-control" id="Type">
+                                        <option selected>
+                                          Sélectionnez dans la liste
+                                        </option>
+                                        <option>Choix 1</option>
+                                        <option>Choix 2</option>
+                                        <option>Choix 3</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-group my_check">
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <label for="presen">Présence</label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                      <div class="form-check form-check-inline">
+                                        <label
+                                          class="form-check-label"
+                                          for="presen1"
+                                          >WEB</label
+                                        >
+
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="inlineRadioOptions"
+                                          id="presen1"
+                                          value="option1"
+                                        />
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <label
+                                          class="form-check-label"
+                                          for="presen2"
+                                          >DIGITALE</label
+                                        >
+
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="inlineRadioOptions"
+                                          id="presen2"
+                                          value="option1"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <label for="style">Votre Style</label>
+                                    </div>
+                                    <div class="col-sm-9">
+                                      <div class="row">
+                                        <div class="col-6">
+                                          <div class="form-check">
+                                            <div class="row">
+                                              <div class="col-9">
+                                                <label
+                                                  class="form-check-label"
+                                                  for="style1"
+                                                  >Dance</label
+                                                >
+                                              </div>
+                                              <div class="col-3">
+                                                <input
+                                                  class="form-check-input"
+                                                  type="checkbox"
+                                                  id="style1"
+                                                  value="option1"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="form-check">
+                                            <div class="row">
+                                              <div class="col-9">
+                                                <label
+                                                  class="form-check-label"
+                                                  for="style2"
+                                                  >Dance</label
+                                                >
+                                              </div>
+                                              <div class="col-3">
+                                                <input
+                                                  class="form-check-input"
+                                                  type="checkbox"
+                                                  id="style2"
+                                                  value="option1"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="form-check">
+                                            <div class="row">
+                                              <div class="col-9">
+                                                <label
+                                                  class="form-check-label"
+                                                  for="style3"
+                                                  >Dance</label
+                                                >
+                                              </div>
+                                              <div class="col-3">
+                                                <input
+                                                  class="form-check-input"
+                                                  type="checkbox"
+                                                  id="style3"
+                                                  value="option1"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-6">
+                                          <div class="form-check">
+                                            <div class="row">
+                                              <div class="col-9">
+                                                <label
+                                                  class="form-check-label"
+                                                  for="style4"
+                                                  >Dance</label
+                                                >
+                                              </div>
+                                              <div class="col-3">
+                                                <input
+                                                  class="form-check-input"
+                                                  type="checkbox"
+                                                  id="style4"
+                                                  value="option1"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="form-check">
+                                            <div class="row">
+                                              <div class="col-9">
+                                                <label
+                                                  class="form-check-label"
+                                                  for="style5"
+                                                  >Dance</label
+                                                >
+                                              </div>
+                                              <div class="col-3">
+                                                <input
+                                                  class="form-check-input"
+                                                  type="checkbox"
+                                                  id="style5"
+                                                  value="option1"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="form-check">
+                                            <div class="row">
+                                              <div class="col-9">
+                                                <label
+                                                  class="form-check-label"
+                                                  for="style6"
+                                                  >Dance</label
+                                                >
+                                              </div>
+                                              <div class="col-3">
+                                                <input
+                                                  class="form-check-input"
+                                                  type="checkbox"
+                                                  id="style6"
+                                                  value="option1"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="form-group">
+                                  <div class="row">
+                                    <div
+                                      class="col-sm-1 my_col_ad"
+                                      style="padding-right: 0 !important"
+                                    >
+                                      <label for="message">Message</label>
+                                    </div>
+                                    <div
+                                      class="col-sm-10 my_col_textarea"
+                                      style="padding-left: 0 !important"
+                                    >
+                                      <textarea
+                                        class="form-control"
+                                        id="message"
+                                        rows="3"
+                                      ></textarea>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-dark">
+                              Envoyer
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                      <!----- ENd MES INFOS  ------->
                       <div class="support text-center">SUPPORT</div>
                       <div class="gains text-center">GAINS</div>
                     </div>
