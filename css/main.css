@@ -105,11 +105,11 @@ p {
 }
 .mon-compte {
   background-color: var(--main-black-color);
-  font-size: 20px;
+  font-size: 18px;
 }
 .news_musics {
   background-color: #051025;
-  font-size: 20px;
+  font-size: 16px;
 }
 .news_musics,
 .mon-compte {
@@ -137,7 +137,7 @@ p {
   box-shadow: -7px 0px 3px 1px #686868;
   position: relative;
   margin: 5px 0;
-  font-size: 20px;
+  font-size: 18px;
   cursor: pointer;
 }
 .side-list li:hover {
@@ -209,6 +209,10 @@ p {
   display: none;
   color: #fff;
   height: 300px;
+}
+.main-content .black-back .row > div {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
 }
 .main-control {
   padding: 8px 10px;
