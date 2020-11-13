@@ -27,6 +27,12 @@ ul {
   margin: 0;
   list-style: none;
 }
+a {
+  color: inherit !important;
+}
+a:hover {
+  text-decoration: none !important;
+}
 li {
   padding: 0;
   margin: 0;
@@ -49,10 +55,10 @@ main {
 }
 
 p {
-  font-family: "Open Sans";
+  font-family: "Times New Roman", Times, serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
+  font-size: 16px;
 }
 .arrondi-block {
   display: block;
@@ -205,7 +211,7 @@ p {
 .my_collapse {
   margin: 15px 0;
 }
-.my_collapse > div:not(.ftp) {
+.my_collapse > div:not(.show) {
   display: none;
   color: #fff;
   height: 300px;
@@ -316,3 +322,248 @@ footer .f-p-div {
   }
 }
 /* ----------- 05  End Footer CSS   -----------*/
+/* ----------- 06  Start Info CSS   -----------*/
+.info .grey-back {
+  padding: 25px 10px;
+}
+.info form {
+  color: #000;
+}
+.info .row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+.info .form-group {
+  margin-bottom: 2em !important;
+}
+.info .row > div {
+  text-align: left;
+}
+.info .my_check .form-check-label {
+  margin-right: 8px;
+}
+.info label {
+  font-size: 18px;
+}
+.info .type select {
+  font-size: 17px;
+  color: #818181;
+}
+.form-check {
+  padding-left: 0 !important;
+}
+.info form .my_col_ad {
+  flex: 0 0 13%;
+  max-width: 13%;
+  padding-right: 0 !important;
+}
+.info form .my_col_textarea {
+  flex: 0 0 86%;
+  max-width: 86%;
+  padding-left: 0 !important;
+}
+.info .btn {
+  border-radius: 10px;
+  width: 400px;
+}
+
+/* ----------- 06  End Info CSS   -----------*/
+/* ----------- 07 Start Cronique radio CSS   -----------*/
+.promo-content .row {
+  margin-left: 0 !important;
+}
+.promo-content .btn {
+  background-color: #ffdf00;
+  font-size: 17px;
+}
+.promo-content .btn:hover {
+  color: #000011;
+  background-color: #e9ca02;
+}
+.promotion .cronique_img_promo img {
+  width: 90%;
+  max-width: 100%;
+}
+.promotion .hors-btn {
+  background-color: #2c2a2b;
+  color: #d4d0d0;
+  border-radius: 10px;
+  padding: 5px 25px;
+}
+
+.promo-desc {
+  color: #fff;
+  padding: 20px 0;
+}
+.promo-desc p {
+  font-size: 14px;
+}
+.promotion .prmomo-mois {
+  padding: 40px 0 0;
+}
+
+.promotion .blue_back {
+  background-color: #06b5eb;
+  color: #fff;
+  text-align: center;
+  padding: 0 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.promotion .blue_back p {
+  line-height: 30px !important;
+  font-size: 9px;
+  letter-spacing: 1px;
+  margin-bottom: 0 !important;
+}
+@media (max-width: 992px) {
+  .promotion .blue_back p {
+    line-height: 20px !important;
+    font-size: 9px;
+  }
+}
+.promotion .blue_back .prix {
+  font-size: 38px;
+  margin-right: 8px;
+}
+@media (max-width: 992px) {
+  .promotion .blue_back .prix {
+    font-size: 30px;
+    margin-right: 5px;
+  }
+}
+.promo-price {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding-right: 25px;
+  font-family: "Times New Roman", Times, serif;
+}
+.promo-price .currency {
+  position: absolute;
+  top: 6%;
+  font-size: 12px;
+}
+.prmomo-mois .btn {
+  background-color: #ed0084;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Start horoscope  */
+.horoscope {
+  margin: 20px 0 10px;
+}
+
+.box-how {
+  margin-bottom: 15px;
+}
+.horo-tittle {
+  background-color: #06b5eb;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 8px 30px;
+  border-radius: 0 0 12px 12px;
+}
+.horojours {
+  text-align: right;
+  margin-right: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+/* End horoscope  */
+
+/* Start demo */
+.demo {
+  color: #fff;
+}
+.demo-title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.demo .box-demo {
+  background-color: #2c2a2b;
+  margin-bottom: 15px;
+  padding: 12px 8px;
+  border-radius: 8px;
+}
+.demo .box-demo span {
+  margin-left: 8px;
+}
+.demo .box-demo img {
+  cursor: pointer;
+}
+
+#pause {
+  display: none;
+}
+/* End demo  */
+/* ----------- 07  End Cronique radio CSS   -----------*/
+
+/* ----------- 08  Start Cinema CSS   -----------*/
+.cinema {
+  color: #fff;
+}
+
+.cinema .head-btn {
+  width: 100%;
+  max-width: 100%;
+  background-color: #ffdf00;
+  border-radius: 12px;
+}
+.cinema .head-btn:hover {
+  color: rgb(34, 34, 37);
+  background-color: #ebcd0d;
+}
+.cinema-box {
+  margin: 15px 0 40px;
+}
+.black-back > .cinema-box:last-child {
+  margin-bottom: 10px !important;
+}
+.cinema-box ul {
+  margin: 15px 0 0;
+}
+.cinema-box ul li {
+  margin: 10px 0;
+}
+.cinema-box ul li:first-of-type {
+  font-size: 18px !important;
+}
+.file-box {
+  margin: 5px 0;
+}
+
+.cinema-box .box-demo {
+  background-color: #2c2a2b;
+  display: inline-block;
+  width: 75%;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.cinema-box .box-demo span {
+  margin-left: 8px;
+}
+.cinema-box img {
+  cursor: pointer;
+}
+
+.down {
+  display: inline-block;
+  background-color: #06b5eb;
+  margin-left: 5px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.red-back {
+  background-color: #ed0084;
+  color: #fff;
+  height: 100%;
+  text-align: center;
+  padding: 50% 0;
+  border-radius: 8px;
+  margin: 0 6px 0 -8px;
+}
+/* ----------- 08  End Cinema CSS   -----------*/
